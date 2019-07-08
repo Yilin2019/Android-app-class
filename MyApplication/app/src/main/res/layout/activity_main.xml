@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/naichadian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎来到奶茶店"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/whichtea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zhenzhu"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <RadioGroup
+        android:id="@+id/whichdrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/choose1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:checked="true"
+            android:text="珍珠奶茶" />
+
+        <RadioButton
+            android:id="@+id/choose2"
+            android:layout_width="172dp"
+            android:layout_height="51dp"
+            android:text="红茶玛奇朵" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <CheckBox
+            android:id="@+id/yeguo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="椰果" />
+
+        <CheckBox
+            android:id="@+id/buding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布丁" />
+
+        <CheckBox
+            android:id="@+id/hongdou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红豆" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:text="OK" />
+    </LinearLayout>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit"
+        android:hint="备注"
+        android:maxLines="2"
+        android:layout_marginTop="550dp"/>
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="520dp"
+        android:max="100"
+        android:progress="20"
+        />
+
+
+</RelativeLayout>
